@@ -17,8 +17,20 @@ body {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
   color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+li,
+a {
+  text-transform: uppercase;
 }
 
 h1,
@@ -113,7 +125,6 @@ nav ul li {
   overflow: hidden;
 }
 .header-list-open {    /*  class that styles the open responsive nav menu */
-  list-style: none;
   position: absolute;
   top: 100%;
   right: 0;
@@ -187,7 +198,6 @@ nav ul li:first-child {
   }
 
   .header-list-item {         /* list items(li) inside the ul */
-    display: inline-block;
     border: none;
     background: transparent;
     margin-right: 30px;
@@ -449,6 +459,43 @@ nav ul li:first-child {
 /********** GALLERY Page **********/
 /**********              **********/
 
+div > img {
+  width: 320px;
+  height: 213px;
+}
+
+.gallery-flex-container {
+  margin-bottom: 3em;
+}
+
+.gallery h2,
+.gallery ul {
+  margin-bottom: 2em;
+}
+
+.gallery li {
+  margin: 1em 2em;
+}
+
+.gallery li:hover {
+  transform: scale(1.2);
+}
+
+.gallery .button-container {
+  padding-bottom: 3em;
+}
+
+@media (min-width: 800px) {
+
+  .gallery-flex-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-flow: column wrap;
+     align-content: stretch;
+  }
+
+}
 
 /********** INTERLUDE Section **********/
 /**********                   **********/
