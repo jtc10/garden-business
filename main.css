@@ -483,16 +483,59 @@ div > img {
 
 .gallery .button-container {
   padding-bottom: 3em;
+
 }
+@media (max-width: 400px) {
+
+  .gallery li {
+    margin: 2em 10px;
+  }
+
+  div > img {
+    width: 240px;
+    height: 161px;
+  }
+
+}
+
 
 @media (min-width: 800px) {
 
   .gallery-flex-container {
+     width: 80%;
      display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-flow: column wrap;
-     align-content: stretch;
+     flex-wrap: wrap;
+     margin:0 auto 3em auto;
+  }
+
+  .gallery-flex-item {
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  div > img {
+    width: 240px;
+    height: 161px;
+  }
+
+  .gallery-flex-item {
+     width: 33%;
+  }
+
+}
+
+@media (min-width: 1250px) {
+
+  .gallery-flex-item {
+     width: 33%;
+  }
+
+  div > img {
+    width: 320px;
+    height: 213px;
   }
 
 }
