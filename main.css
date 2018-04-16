@@ -132,6 +132,7 @@ nav ul li {
 }
 nav ul li {
   border-bottom: 1px solid rgb(128,128,128);
+  display: block;
 }
 
 .header-list-item a {        /* link in the header ul */
@@ -193,6 +194,9 @@ nav ul li:first-child {
     line-height: 50px;
   }
 
+  nav ul li {
+    display: inline-block;
+  }
   nav ul li:first-child {
     border-top: none;
   }
@@ -485,6 +489,13 @@ div > img {
   padding-bottom: 3em;
 
 }
+
+.hide {
+  opacity: 0;
+  transition: all 2s ease-in-out;
+  display: none;
+}
+
 @media (max-width: 400px) {
 
   .gallery li {
