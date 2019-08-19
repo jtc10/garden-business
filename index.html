@@ -6,34 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sustained Garden Company</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <!-- branch -->
 <body>
-  <!-- Start of Navigation Bar -->
-  <header>
-      <nav class="navbar">
-        <!-- <h2 class="float-left">Sustained Garden Co</h2> -->
-        <ul class="justify-content-end navbar-expand-md">
-          <!-- Navigation Links -->
-          <li class="nav-item"><a class="nav-link active" href="#landing-page">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-  </header>
-  <!-- End of Navigation Bar -->
+
+  <div class="container-fluid p-0">
+    <!-- Start of Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+          <span class="navbar-brand h3">Sustained Garden Co.</span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <!-- Navigation Links -->
+              <li class="nav-item  mx-2"><a class="nav-link text-white" href="#landing-page">Home</a></li>
+              <li class="nav-item  mx-2"><a class="nav-link  text-white"  href="#about">About</a></li>
+              <li class="nav-item dropdown mx-2"><a class="nav-link dropdown-toggle text-white" id="navbarDropdown" data-toggle="dropdown" href="#services">Services</a>
+                  <div class="dropdown-menu bg-transparent">
+                    <a class="dropdown-item text-white" href="#">Service 1</a>
+                    <a class="dropdown-item text-white" href="#">Service 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-white" href="#">Service 3</a>
+                  </div>
+              </li>
+              <li class="nav-item  mx-2"><a class="nav-link  text-white"  href="#gallery">Gallery</a></li>
+              <li class="nav-item  mx-2"><a class="nav-link  text-white"  href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <!-- End of Navigation Bar -->
+
+    <!-- Beggining of Jumbotron -->
+    <section class="jumbotron text-center text-white d-flex align-items-center justify-content-center" id="landing-page">
+      <div>
+        <h1 class="display-3">Sustained Garden Company</h1>
+        <p class="lead">Simple Organic Gardening</p>
+          <a href="#about" class="btn btn-lg active text-white border-white" role="button" aria-pressed="true">Learn More</a>
+      </div>
+    </section>
 
 
 
   <!-- <footer>
     <p>&copy Sustained Garden Co 2018</p>
   </footer>  -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  </div>
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
