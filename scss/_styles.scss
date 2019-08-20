@@ -1,6 +1,35 @@
 
+.container-fluid {
+  max-width: 1400px;
+}
 section.jumbotron {
   height: 100vh;
   background: url('/images/swiss-chard.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.abt-pg-bg-image {
+  min-height: 250px;
+  background: url('/images/cherry-tomato.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.srv-bg-image {
+  height: 200px;
+  width: 200px;
+}
+
+.srv-bg-image-1 {
+  background: url('/images/seedlings.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.srv-bg-image-2 {
+  background: url('/images/cabbage-field.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.srv-bg-image-3 {
+  background: url('/images/construction.jpeg') center center no-repeat;
   background-size: cover;
 }
